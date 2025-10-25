@@ -13,4 +13,4 @@ PennyWise is a simple web application which helps students track and manage thei
 **Phase 1 Goal**: Fully functional frontend (localStorage based)
 
 ## Citation
-Created as a part of **1st semester web develepment project** - Team **PennyWise**
+Created as a part of **1st semester Web Develepment project** - Team **PennyWise**
