@@ -5,7 +5,7 @@
 PennyWise is a simple web application which helps students track and manage their expenses.
 
 ## Team
-1) Mahad Itqan Naser
+1) Mahad Itqaan Naser
 2) Syed Muhammad Ali
 3) Muhammad Hassan Tasneem
 
