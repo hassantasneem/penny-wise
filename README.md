@@ -1,2 +1,16 @@
-A curated showcase of my best work and the journey as a student. This repository serves as a live, interactive portfolio detailing my skills, projects and experiences.
-Visit the live site at: https://hassan-tasneem.vercel.app/
+# penny-wise
+
+# PennyWise - Expense tracker for students!
+
+PennyWise is a simple web application which helps students track and manage their expenses.
+
+## Team
+1) Mahad Itqaan Naser
+2) Syed Muhammad Ali
+3) Muhammad Hassan Tasneem
+
+## Timeline 
+**Phase 1 Goal**: Fully functional frontend (localStorage based)
+
+## Citation
+Created as a part of **1st semester Web Develepment project** - Team **PennyWise**
