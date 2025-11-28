@@ -8,6 +8,7 @@ PennyWise is a simple web application which helps students track and manage thei
 1) Mahad Itqaan Naser
 2) Syed Muhammad Ali
 3) Muhammad Hassan Tasneem
+4) Abdullah Amir
 
 ## Timeline 
 **Phase 1 Goal**: Fully functional frontend (localStorage based)
