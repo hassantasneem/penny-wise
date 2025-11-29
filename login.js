@@ -82,7 +82,7 @@ function login() {
   }
 
   // Successful login
-  // Add your actual post-login logic (e.g., redirect to dashboard) here
+  // Add your actual post-login logic (e.g., redirect to index.html) here
     navigateWithTransition('landing.html');
 }
 
@@ -93,17 +93,17 @@ document.addEventListener('DOMContentLoaded', () => {
     // Navigates to landing.html (Home button)
 
     document.getElementById('home-button').addEventListener('click', function() {
-    navigateWithTransition('dashboard.html');
+    navigateWithTransition('index.html');
     });
      document.getElementById('fet-btn').addEventListener('click', function() {
-    navigateWithTransition('dashboard.html#features');
+    navigateWithTransition('index.html#features');
      });
      document.getElementById('rev-btn').addEventListener('click', function() {
-    navigateWithTransition('dashboard.html#reviews');
+    navigateWithTransition('index.html#reviews');
      });
     
      document.getElementById('faq-btn').addEventListener('click', function() {
-    navigateWithTransition('dashboard.html#faqs');
+    navigateWithTransition('index.html#faqs');
     });
 
     // Simple scroll/navigate to sections (or could be external pages)
