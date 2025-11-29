@@ -9,7 +9,7 @@
     <link rel="stylesheet" 
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
           crossorigin="anonymous" />
-    <link rel="stylesheet" href="dashboardStyle.css">
+    <link rel="stylesheet" href="landingStyle.css">
 </head>
 
 <body>
@@ -18,6 +18,11 @@
         <h1>PennyWise - Dashboard</h1>
     </header>
 
+    <div class="background-dollar">$</div>
+    <div class="background-percentage">%</div>
+    <div class="background-grid"></div>
+    <div class="background-coins"></div>
+    
     <main class="dashboard">
         <section class="net-balance">
             <div class="balance-info">
@@ -82,9 +87,58 @@
             </div>
         </div>
     
-        <script src="dashboard.js"></script>
+        <script src="landing.js"></script>
     </main>
 
+     <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo"> 
+                        <span>Pennywise</span>
+                    </div>
+                    <p>Empowering students to make smart financial decisions, one penny at a time.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Download</a></li>
+                        <li><a href="#">Updates</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pennywise. All rights reserved. Made with <i class="fas fa-heart"></i> for students.</p>
+            </div>
+        </div>
+    </footer>
     <div id="transition-container" class="page-transition"></div>
 </body>
 
