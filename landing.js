@@ -40,7 +40,7 @@ function navigateWithTransition(url) {
 }
 
 document.getElementById('nav-button').addEventListener('click', function() {
-    navigateWithTransition('dashboard.html');
+    navigateWithTransition('index.html');
 });
 
 function setupEventListeners() {

@@ -55,13 +55,13 @@ document.addEventListener('DOMContentLoaded', function () {
     const buttons = [
         { id: 'contact-button', url: 'contact.html' },
         { id: 'about-button', url: 'about.html' },
-        { id: 'home-button', url: 'dashboard.html' },
+        { id: 'home-button', url: 'index.html' },
         { id: 'start-btn', url: 'login.html' },
         { id: 'start-btn2', url: 'login.html' },
         { id: 'start-btn3', url: 'login.html' },
-        { id: 'ft-btn', url: 'dashboard.html#features' },
-        { id: 'rev-btn', url: 'dashboard.html#reviews' },
-        { id: 'faq-btn', url: 'dashboard.html#faqs' }
+        { id: 'ft-btn', url: 'index.html#features' },
+        { id: 'rev-btn', url: 'index.html#reviews' },
+        { id: 'faq-btn', url: 'index.html#faqs' }
     ];
 
     buttons.forEach(({ id, url }) => {
