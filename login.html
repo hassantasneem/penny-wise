@@ -1,0 +1,52 @@
+html: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PennyWise Login</title>
+  <link rel="stylesheet" href="login.css">
+  </head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <div class="logo">
+        <button class="home-btn" id="home-button">
+          <img src="penny.png" alt="Pennywise Logo">
+        </button>
+      </div>
+      <ul class="nav-links">
+        <li><button id="fet-btn">Features</button></li>
+        <li><button id="rev-btn">Reviews</button></li>
+        <li><button id="faq-btn">FAQs</button></li>
+        <li><button class="about-btn" id="about-button">About</button></li>
+        <li><button class="contact-btn" id="contact-button">Contact</button></li>
+      </ul>
+      <div></div>
+    </div>
+  </nav>
+
+  <div class="main-content">
+    <div class="background-dollar">$</div>
+    <div class="background-percentage">%</div>
+    <div class="background-grid"></div>
+    <div class="background-coins"></div>
+
+    <div class="login-box">
+      <a href="landing.html" class="title">PennyWise</a>
+      <h2 class="welcome-heading">Welcome</h2>
+      <p class="subtitle">Log in to manage your expenses</p>
+
+      <input type="text" class="input-field" id="name" placeholder="Your Name">
+      <input type="email" class="input-field" id="email" placeholder="Your Email">
+
+      <div class="captcha-box" id="captchaText">Loading...</div>
+      <input type="text" class="input-field" id="captchaInput" placeholder="Enter CAPTCHA">
+
+      <button class="login-button" onclick="login()">Login</button>
+    </div>
+  </div>
+  
+ <div id="transition-container" class="page-transition"></div>
+  <script src="login.js"></script>
+</body>
+</html>
