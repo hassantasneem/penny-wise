@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PennyWise - Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+          crossorigin="anonymous" />
+    <link rel="stylesheet" href="landingStyle.css">
+</head>
+
+<body>
+    <header class="nav">
+        <button id="nav-button" class="nav-btn"><img src="penywise.png"></button>
+        <h1>PennyWise - Dashboard</h1>
+    </header>
+
+    <div class="background-dollar">$</div>
+    <div class="background-percentage">%</div>
+    <div class="background-grid"></div>
+    <div class="background-coins"></div>
+    
+    <main class="dashboard">
+        <section class="net-balance">
+            <div class="balance-info">
+                <h1 id="tot-balance">Rs. 0</h1>
+                <h1 class="txt-balance">Net Expenses</h1>
+            </div>
+            <button id="add-btn" class="main-button">+ Add Expense</button>
+        </section>
+
+        <section class="expenses">
+            <header class="exp-header">
+                <h2>Expenses</h2>
+            </header>
+
+            <div class="expense-title">
+                <div class="detail-left">
+                    <span>Expense Detail (Click to remove)</span>
+                </div>
+                <div class="detail-right">
+                    <span>Category</span>
+                    <span>|</span>
+                    <span>Expense</span>
+                    <span>|</span>
+                    <span>Date</span>
+                </div>
+            </div>
+
+            <ul id="expense-tbl" class="main-tbl">
+            </ul>
+        </section>
+
+        <section class="analysis">
+            <h2>Category Breakdown</h2>
+             <div id="analysis-chart" class="main-chart">
+                <canvas id="myChart"></canvas>
+            </div>
+            
+            <div id="analysis-grid" class="main-analysis">
+            </div>
+           
+        </section>
+
+        <div id="modal-overlay" class="modal-overlay hidden">
+            <div class="modal-content">
+                <h3>Add New Expense</h3>
+                <form id="expense-form">
+                    <input type="text" id="input-desc" placeholder="Description (e.g. Lunch)" required>
+                    <input type="number" id="input-amount" placeholder="Amount" required>
+                    <select id="input-category">
+                        <option value="Food & Drinks">Food & Drinks</option>
+                        <option value="Shopping">Shopping</option>
+                        <option value="Utilities">Utilities</option>
+                        <option value="Transport">Transport</option>
+                        <option value="Entertainment">Entertainment</option>
+                    </select>
+                    <input type="date" id="input-date" required>
+                    <div class="modal-actions">
+                        <button type="button" id="close-modal" class="btn-secondary">Cancel</button>
+                        <button type="submit" class="btn-primary">Save Expense</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+        <script src="landing.js"></script>
+    </main>
+
+     <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo"> 
+                        <span>Pennywise</span>
+                    </div>
+                    <p>Empowering students to make smart financial decisions, one penny at a time.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Download</a></li>
+                        <li><a href="#">Updates</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pennywise. All rights reserved. Made with <i class="fas fa-heart"></i> for students.</p>
+            </div>
+        </div>
+    </footer>
+    <div id="transition-container" class="page-transition"></div>
+</body>
+
+</html>
