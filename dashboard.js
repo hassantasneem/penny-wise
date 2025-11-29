@@ -62,7 +62,7 @@ document.getElementById('home-button').addEventListener('click', function() {
     navigateWithTransition('dashboard.html');
 });
 document.getElementById('start-btn').addEventListener('click', function() {
-    navigateWithTransition('landing.html');
+    navigateWithTransition('login.html');
 });
 document.getElementById('ft-btn').addEventListener('click', function() {
     navigateWithTransition('dashboard.html#features');
