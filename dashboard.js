@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // 1. Get all FAQ question elements
     const faqQuestions = document.querySelectorAll('.faq-question');
 
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function navigateWithTransition(url) {
     const container = document.getElementById('transition-container');
     container.style.pointerEvents = 'all';
-    
+
     const panel = document.createElement('div');
     panel.className = 'slide-panel';
     panel.innerHTML = `
@@ -46,32 +46,40 @@ function navigateWithTransition(url) {
         <div class="loading-text">Loading...</div>
     `;
     container.appendChild(panel);
-    
+
     setTimeout(() => {
         window.location.href = url;
     }, 2000);
 }
 
-document.getElementById('contact-button').addEventListener('click', function() {
-    navigateWithTransition('contact.html');
-});
-document.getElementById('about-button').addEventListener('click', function() {
-    navigateWithTransition('about.html');
-});
-document.getElementById('home-button').addEventListener('click', function() {
-    navigateWithTransition('dashboard.html');
-});
-document.getElementById('start-btn').addEventListener('click', function() {
-    navigateWithTransition('login.html');
-});
-document.getElementById('ft-btn').addEventListener('click', function() {
-    navigateWithTransition('dashboard.html#features');
-});
-document.getElementById('rev-btn').addEventListener('click', function() {
-    navigateWithTransition('dashboard.html#reviews');
-});
-document.getElementById('faq-btn').addEventListener('click', function() {
-    navigateWithTransition('dashboard.html#faqs');
-});
+document.addEventListener('DOMContentLoaded', function () {
 
+    document.getElementById('contact-button').addEventListener('click', function () {
+        navigateWithTransition('contact.html');
+    });
+    document.getElementById('about-button').addEventListener('click', function () {
+        navigateWithTransition('about.html');
+    });
+    document.getElementById('home-button').addEventListener('click', function () {
+        navigateWithTransition('dashboard.html');
+    });
+    document.getElementById('start-btn').addEventListener('click', function () {
+        navigateWithTransition('login.html');
+    });
+    document.getElementById('start-btn2').addEventListener('click', function () {
+        navigateWithTransition('login.html');
+    });
+    document.getElementById('start-btn3').addEventListener('click', function () {
+        navigateWithTransition('login.html');
+    });
+    document.getElementById('ft-btn').addEventListener('click', function () {
+        navigateWithTransition('dashboard.html#features');
+    });
+    document.getElementById('rev-btn').addEventListener('click', function () {
+        navigateWithTransition('dashboard.html#reviews');
+    });
+    document.getElementById('faq-btn').addEventListener('click', function () {
+        navigateWithTransition('dashboard.html#faqs');
+    });
+});
 
