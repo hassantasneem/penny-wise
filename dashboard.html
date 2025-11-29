@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pennywise - Smart Student Expense Tracker</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+   
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                 <button class="home-btn" id="home-button"> <img src="penny.png" alt="Pennywise Logo" style="height: 60px; cursor: pointer;"></button>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#faqs">FAQs</a></li>
+                <li><button class="about-btn" id="about-button">About</button></li>
+                <li><button class="contact-btn" id="contact-button">Contact</button></li>
+            </ul>
+            <button class="cta-button" id="start-btn">Start Now</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-star"></i>
+                    <span>Trusted by entire FAST NUCES</span>
+                </div>
+                <h1 class="hero-title">Your Money, <span class="highlight">Your Way</span></h1>
+                <p class="hero-subtitle">Track every penny, master your budget, and take control of your finances with ease. Because being smart with money never goes out of style.</p>
+                <div class="hero-buttons">
+                    <button class="primary-button" id="start-btn">Start Now <i class="fas fa-arrow-right"></i></button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>4.8★</h3>
+                        <p>User Rating</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="dashboard-placeholder">
+                    <!-- Dashboard image will be inserted here -->
+                    <div class="placeholder-content">
+                         <img src="pennyexpense.jpg" alt="Our Mission" style="width:100%; border-radius: 25px ; height:auto;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Everything You Need to <span class="highlight">Stay on Budget</span></h2>
+                <p>Powerful features designed specifically for students who want to make every dollar count</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-wallet"></i>
+                    </div>
+                    <h3>Smart Budget Tracking</h3>
+                    <p>Set personalized budgets for different categories and get real-time alerts when you're approaching your limits. Our intelligent system learns your spending patterns and helps you make smarter financial decisions.</p>
+                    <a href="#" class="feature-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <h3>Expense Categories</h3>
+                    <p>Organize your spending with customizable categories like food, textbooks, entertainment, and transportation. Visualize where your money goes with beautiful charts and insights tailored for student life.</p>
+                    <a href="#" class="feature-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3>Visual Reports</h3>
+                    <p>Transform your spending data into actionable insights with interactive graphs and monthly reports. Understand your financial habits and identify opportunities to save more for what matters most.</p>
+                    <a href="#" class="feature-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <h3>Smart Notifications</h3>
+                    <p>Stay informed with timely reminders about bill payments, budget limits, and spending patterns. Never miss a payment deadline or overspend on your monthly budget again.</p>
+                    <a href="#" class="feature-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <div class="section-header">
+                <h2>Loved by Students <span class="highlight">Everywhere</span></h2>
+                <p>See what our community is saying about Pennywise</p>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Pennywise completely changed how I manage my student budget. I used to run out of money by the third week, but now I actually have savings! The budget tracking feature is a game-changer."</p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="reviewer-info">
+                            <h4>Mughees Ismail</h4>
+                            <p>PF Instructor, FAST NUCES  </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"As a hostellite, managing expenses in a new country was overwhelming. Pennywise made it so simple! The categories help me see exactly where my money goes. Highly recommend!"</p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="reviewer-info">
+                            <h4>Muhammad Ahsan</h4>
+                            <p>Computer Science, FAST NUCES</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"I've tried other expense trackers, but Pennywise is by far the best. The interface is clean, it's super easy to use, and the insights actually help me save money. Plus, it's made specifically for students!"</p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="reviewer-info">
+                            <h4>Muhammad Arham</h4>
+                            <p>Electrical Engineer , MCS</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Finally, a budgeting app that doesn't feel like homework! Pennywise is intuitive and actually fun to use. I love seeing my progress and knowing I'm in control of my finances."</p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="reviewer-info">
+                            <h4>Dr Iqra Muhammad</h4>
+                            <p>ICT Instructor, FAST NUCES </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section id="faqs" class="faqs">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked <span class="highlight">Questions</span></h2>
+                <p>Got questions? We've got answers</p>
+            </div>
+            <div class="faqs-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is Pennywise free to use?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! Pennywise offers a free plan with all essential features for students.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is my financial data secure?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely. We use bank-level encryption to protect your data. Your information is stored securely and we never share it with third parties.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I use Pennywise on multiple devices?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! Your data syncs automatically across all your devices. Use Pennywise on your phone, tablet, or computer seamlessly.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I set up my budget?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>It's simple! Just enter your monthly income, set spending limits for different categories, and Pennywise will track everything automatically. You can adjust your budget anytime.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I export my expense reports?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! You can export your expense data as CSV or PDF files anytime. Perfect for keeping records or sharing with parents.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you offer student discounts?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Pennywise is already priced with students in mind! Plus, we offer a 50% discount on premium plans for verified students with a .edu email address.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Take Control of Your Finances?</h2>
+                <p>Join thousands of students who are already saving smarter with Pennywise</p>
+                <div class="cta-buttons">
+                    <button class="primary-button large" id="start-btn">Start Now - It's Free <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-placeholder-footer"></div>
+                        <span>Pennywise</span>
+                    </div>
+                    <p>Empowering students to make smart financial decisions, one penny at a time.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Download</a></li>
+                        <li><a href="#">Updates</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pennywise. All rights reserved. Made with <i class="fas fa-heart"></i> for students.</p>
+            </div>
+        </div>
+    </footer>
+
+     <script src="dashboard.js"></script>
+
+      <div id="transition-container" class="page-transition"></div>
+
+</body>
+</html> 
